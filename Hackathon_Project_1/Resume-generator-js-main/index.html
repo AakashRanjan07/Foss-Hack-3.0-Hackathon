@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Resume Builder</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="input-fields">
+            <h1>Resume Generator</h1>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="title" placeholder="Title (e.g., Web Developer)" />
+            <textarea name="workexp" placeholder="Work Experience"></textarea>
+            <textarea name="academics" placeholder="Academic Details"></textarea>
+            <input name="objective" placeholder="Objective" />
+            <textarea name="skills" placeholder="Skills"></textarea>
+            <textarea name="projects" placeholder="Projects"></textarea>
+            <textarea name="achievements" placeholder="Achievements"></textarea>
+            <textarea name="contact" placeholder="Contact"></textarea>
+        </form>
+        <div class="output">
+            <!-- This section can be populated with JavaScript for the preview -->
+        </div>
+        <div class="btn">
+            <button class="no-print" onclick="toggle()">Preview or Edit</button>
+            <button id="printBtn" class="no-print" onclick="printResume()">Print Resume</button>
+        </div>
+
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
