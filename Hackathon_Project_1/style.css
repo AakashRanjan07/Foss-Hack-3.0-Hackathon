@@ -176,7 +176,6 @@ button {
  transition: all 0.5s;
   filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.2));
 }
-
 /* SIDE MENU */
 .menu {
   cursor: pointer;
